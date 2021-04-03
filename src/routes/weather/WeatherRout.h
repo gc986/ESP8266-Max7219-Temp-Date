@@ -6,7 +6,7 @@
 
 class WeatherRout{
     private:
-        String weatherServerUrl = "http://api.openweathermap.org/data/2.5/weather?q=Yekaterinburg&appid=YOUR-KEY&units=metric";
+        String weatherServerUrl = "http://api.openweathermap.org/data/2.5/weather?q=Yekaterinburg&appid=OPEN_WEATHER_API_KEY&units=metric";
         Internet internet;
         String parseWeatherJson(String input);
     public:
