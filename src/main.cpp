@@ -5,9 +5,10 @@
 #include "routes/weather/WeatherRout.h"
 
 String helloString = "Hello from Yekat!";
+String tempNowMessage = "Temp now ";
 
-String ssid = "WIFI-NAME";
-String pass = "PASS-OF-WIFI";
+String ssid = "your_wifi";
+String pass = "wifi_pass";
 
 Display display;
 Internet internet;
@@ -29,7 +30,7 @@ void loop(void){
     else 
         display.handleTicker("No WiFi connection...");
     if (internet.checkInternet())
-        display.handleTicker(weatherRout.getWeather());
+        display.handleTicker(tempNowMessage + weatherRout.getWeather());
     else 
         display.handleTicker("No WiFi connection...");
 }

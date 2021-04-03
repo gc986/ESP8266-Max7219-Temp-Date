@@ -16,5 +16,9 @@ String WeatherRout::getWeather(){
     String data = internet.getDataFromUrl(weatherServerUrl);
     String temp = parseWeatherJson(data);
             
-    return "Temp now " + temp;
+    if(temp.toInt()>0){
+        temp = "+" + temp;
+    }
+
+    return temp;
 }
