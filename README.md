@@ -2,6 +2,9 @@
 Загрузка времени и погоды через WiFi с помощью ESP8266, отображение при помощи дисплея построенном на MAX7219
 
 
+<img src="https://github.com/gc986/ESP8266-Max7219-Temp-Date/blob/main/temp_line.jpg">
+
+
 Проект разрабатывается на платформе <b>PlatformIO</b>. Для модификации рекомендуется использовать IDE VisualCode.
 
 
